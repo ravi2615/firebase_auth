@@ -1,0 +1,17 @@
+.nav{
+    z-index: 9999;
+}
+
+.nav-tabs li{
+    margin: -0.1rem 0.4rem -0.1rem -0.25rem;
+}
+
+.nav-tabs li button{
+    background-color: rgb(99, 99, 99) !important;
+    color: #fff !important;
+}
+
+.nav-tabs li button:hover {
+    color: #fff !important;
+    background-color: rgb(46, 46, 46) !important;
+}

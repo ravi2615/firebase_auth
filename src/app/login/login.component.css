@@ -1,0 +1,80 @@
+
+
+.login{
+    padding: 20rem;
+    background-color: rgb(169, 81, 187);
+    height: 100vh;
+    display: flex;
+    align-items: center !important;
+}
+.login form {
+    width: 50% ;
+    margin-left: 30rem;
+}
+
+.login form p{
+    line-height: 3.5rem ;
+    font-size: 1.5rem;
+    font-weight: bold
+}
+
+.login form label{
+    font-size: 2rem;
+    color: rgb(92, 92, 92);
+}
+/* .form-group{
+    display: inline;
+} */
+
+input.ng-touched.ng-invalid {
+    border-bottom: 0.5px solid red;
+    padding: 2px;
+    box-shadow: 0 0 22px #ff000030 inset;
+}
+
+.google{
+    width: 102% !important;
+    height: 10vh !important;
+    margin-left: -5px !important;
+}
+
+.fb{
+    width: 100% !important;
+    height: 10vh !important;
+}
+h3{
+    font-weight: bolder;
+    color: rgb(97, 97, 97);
+}
+button:hover{
+    color: rgb(245, 245, 245);
+}
+.google{
+    border-radius: 12% !important;
+}
+.fb{
+    border-radius: 5%;
+}
+img:hover {
+	/* -webkit-filter: grayscale(0);
+	filter: grayscale(0); */
+    cursor: pointer;
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+    filter: contrast(75%);
+}
+
+span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .login{
+        padding: 0;
+    }
+    .login form {
+        width: 100% ;
+        margin-left: 0 !important;
+    }
+}

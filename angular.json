@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "firebase-auth"
+    }
+  },
+  "defaultProject": "firebase-auth",
+  "cli": {
+    "analytics": false
+  }
 }

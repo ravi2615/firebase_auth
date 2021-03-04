@@ -1,0 +1,12 @@
+
+
+.error{
+    padding-top: 8rem;
+}
+.error div{
+    margin-top: 10rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 5rem;
+}
+

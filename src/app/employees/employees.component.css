@@ -1,0 +1,27 @@
+.employee{
+    padding-top: 4rem;
+    /* background-color: rgb(169, 81, 187); */
+    height: 100vh;
+}
+
+input{
+    margin-bottom: 0.3rem;
+}
+
+input.ng-touched.ng-invalid {
+    border-bottom: 0.5px solid red;
+    padding: 2px;
+    box-shadow: 0 0 22px #ff000030 inset;
+}
+
+.card{
+    padding: 1rem !important;
+    background-color: rgb(216, 200, 211);
+    margin-top: 1rem;
+}
+.border{
+    border: 0.1rem solid rgb(147, 74, 165) !important;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+}

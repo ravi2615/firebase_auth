@@ -1,0 +1,44 @@
+
+<div class="login">
+  <div class="container create">
+    
+    <div *ngIf="error" class="alert alert-danger" role="alert">
+      <strong>An Error Occurred:</strong>{{error}}
+    </div>
+    
+      <form class="form" [formGroup]="Form" (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+              
+              <span class="material-icons">
+                  email
+                  </span><label>Email:</label>
+              <input type="email" formControlName="email" class="form-control" placeholder="Enter Email">
+          <small *ngIf="!Form.get('email').valid && Form.get('email').touched" class="form-text w-100 text-danger">Please Enter Email</small><br><br>
+        
+              <span class="material-icons">
+                  lock
+                  </span><label>Password:</label>
+          <input type="password" formControlName="password" class="form-control" placeholder="Password">
+          <small *ngIf="!Form.get('password').valid && Form.get('password').touched" class="form-text w-100 text-danger">Please Enter Password</small>
+
+            </div>
+                      
+          <button type="submit" class="btn button-outline-primary">
+              {{loginMode?  "Sign in" : "Create acount" }}</button>
+              
+      <div class="mb-0">
+          {{loginMode?  "Don't have account?" : "Already have account?" }}
+           <span class=" text-primary" (click)="onModeSwitch()">
+              {{loginMode?  "Create one" : "Sign in" }}</span> </div>
+      <span class="text-primary ">Forgot Password?</span>
+      <div class="mb-0">
+        <h3 class="text-center">OR</h3>
+           <img (click)="loginWithGoogle()" class="google" src="../../assets/btn_google_signin_light_pressed_web@2x.png" alt=""> 
+           <img (click) ="loginWithFb()" class="fb" src="../../assets/17639236_1785253958471956_282550797298827264_n.png" alt=""> 
+           <!-- <a class="btn btn-outline-dark" (click)="loginWithGmail()" role="button" style="width: 100%; margin-top: 10px;padding: 12px;">
+            <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+            Login with Google
+          </a> -->
+        </div>
+        </form>
+      </div>

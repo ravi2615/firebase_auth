@@ -1,0 +1,28 @@
+<!-- <ul class="nav justify-content-end fixed-top"style="background-color: rgba(255, 255, 255, 0.5); backdrop-filter: blur(25px); color: white;">
+    <li class="nav-item">
+      <a class="nav-link active text-dark"  routerLink="/home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark" routerLink="/login">SignIn</a>
+    </li>
+    <!- <li class="nav-item">
+      <a class="nav-link text-dark" routerLink="/student-create">Enroll</a>
+    </li> --
+  </ul> -->
+
+  <ul class="nav nav-tabs bg-dark  text-white fixed-top ">
+    <li class="nav-item">
+      <button class="nav-link text-white btn button-outline-primary" routerLink="/home" *ngIf="isLoggedIn">Home</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link text-white btn button-outline-primary" routerLink="/login" *ngIf="!isLoggedIn">Sign In</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link text-white btn button-outline-primary" (click)="onSignOut()" *ngIf="isLoggedIn">Sign Out</button>
+    </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li> -->
+  </ul>
+  
+  
